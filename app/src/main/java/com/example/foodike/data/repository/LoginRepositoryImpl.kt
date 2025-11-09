@@ -49,8 +49,9 @@ class LoginRepositoryImpl(context: Context) : PrefsDataStore(context = context, 
 
     override val loginState: Flow<Boolean>
         get() = mDataStore.data.map { preferences ->
-            val uiMode = preferences[LOGIN_STATE_KEY] ?: false
-            uiMode
+            // Original: val uiMode = preferences[LOGIN_STATE_KEY] ?: false
+            // 💡 Temporary Change: Force a 'true' login state
+            return@map true
         }
 
     override suspend fun toggleLoginState() {

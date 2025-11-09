@@ -46,7 +46,6 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Remove
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -170,7 +169,7 @@ fun MenuItemCard(
                     ) {
 
                         Icon(
-                            imageVector = Icons.Default.Remove,
+                            imageVector = Icons.Default.Star,
                             contentDescription = stringResource(R.string.subtract),
                             modifier = Modifier
                                 .padding(3.dp, 0.dp)

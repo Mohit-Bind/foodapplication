@@ -45,7 +45,7 @@ import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Circle
+import androidx.compose.material.icons.filled.AddCircle
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -57,6 +57,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.foodike.R
+import com.google.android.gms.maps.model.Circle
 
 @Composable
 fun HistorySection() {
@@ -183,7 +184,7 @@ fun HistorySection() {
                             modifier = Modifier.alpha(0.5f),
                         )
                         Icon(
-                            imageVector = Icons.Filled.Circle,
+                            imageVector = Icons.Filled.AddCircle,
                             contentDescription = "Rating",
                             tint = MaterialTheme.colors.primary
                         )
@@ -285,7 +286,7 @@ fun HistorySection() {
                             modifier = Modifier.alpha(0.5f),
                         )
                         Icon(
-                            imageVector = Icons.Filled.Circle,
+                            imageVector = Icons.Filled.AddCircle,
                             contentDescription = "Rating",
                             tint = MaterialTheme.colors.primary
                         )

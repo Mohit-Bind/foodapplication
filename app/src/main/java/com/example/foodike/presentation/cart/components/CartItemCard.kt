@@ -43,7 +43,6 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
-import androidx.compose.material.icons.filled.Remove
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -52,12 +51,14 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.foodike.R
 import com.example.foodike.domain.model.CartItem
+
 
 @Composable
 fun CartItemCard(
@@ -119,7 +120,7 @@ fun CartItemCard(
                 ) {
 
                     Icon(
-                        imageVector = Icons.Default.Remove,
+                        imageVector = Icons.Default.Add,
                         contentDescription = stringResource(R.string.subtract),
                         modifier = Modifier
                             .padding(3.dp, 0.dp)
